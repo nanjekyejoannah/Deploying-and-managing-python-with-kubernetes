@@ -1,0 +1,9 @@
+web:
+  image: jonan/web
+  ports:
+   - "3000:8000"
+  links:
+   - db
+redis:
+  image: redis:latest
+  container_name: db
